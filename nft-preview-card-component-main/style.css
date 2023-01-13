@@ -17,35 +17,12 @@ body{
 }
 
 .card{
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    */
     background-color: hsl(216, 50%, 16%);
-    max-width: 375px;
+    max-width: 300px;
     border-radius: 20px;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 20px;
 }
-
-/*.card .firstClass .image div {
-    position: absolute;
-    top: 0;
-    background-color: hsl(178, 100%, 50%, 60%);
-    width: 100%;
-    height: calc(100% - 4px);
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-.card .firstClass .image div:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  */
 
 .image{
     max-width: 100%;
@@ -69,7 +46,7 @@ body{
     color: hsl(215, 51%, 70%);
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 18px;
+            
 }  
 
 .card ul{
@@ -85,6 +62,7 @@ body{
 .card  ul li {
     display: flex;
     align-items: center;
+    color: hsl(215, 51%, 70%);
   }
   
 .card ul li:first-child {
@@ -106,10 +84,10 @@ margin-right: 5px;
 }
 
 .creator li img{
-    width: 2.5rem;
+    width: 2.2rem;
     border: 2px solid hsl(0, 0%, 100%);
     border-radius: 50%;
-    margin-right: 15px;
+    margin-top: 5px;
 }
 
 .creator span {
@@ -117,10 +95,16 @@ margin-right: 5px;
     margin-left: 5px;
 }
 
+
 .creator span:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
-  }
+}
+
+.li2{
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
 
 .attribution {
      font-size: 11px; 
