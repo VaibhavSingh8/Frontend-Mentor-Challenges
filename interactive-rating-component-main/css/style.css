@@ -3,14 +3,15 @@
 :root{
     --Orange: hsl(25, 97%, 53%);
     --White: hsl(0, 0%, 100%);
-    --LightGrey: hsl(217, 12%, 63%);
+    --LightGrey: hsla(217, 12%, 63%, 20%);
+    --LightGreyText: hsl(217, 12%, 63%);
     --MediumGrey: hsl(216, 12%, 54%);
     --DarkBlue: hsl(213, 19%, 18%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
     --font: 'Overpass', sans-serif;
 }
 
-html, *, *::after, *::before{
+*, *::after, *::before{
     box-sizing: border-box;
     font-family: var(--font);
 }
@@ -24,34 +25,35 @@ body{
     align-items: center;
     background-color: var(--VeryDarkBlue);
     color: var(--White);
+    min-height: 100vh;
 }
 
 .container{
     max-width: 375px;
     background-color: var(--DarkBlue);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .container .img img{
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-    background-color: var(--MediumGrey);
-    opacity: 90%;
+    background-color: var(--LightGrey);
 }
 
 .container h2{
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 .container p{
     font-size: 15px;
-    color: var(--LightGrey);
+    color: var(--LightGreyText);
 }
 
 .container ul{
+
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -60,15 +62,22 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    
+    margin-top: 1.2rem;
 }
 
-.container ul .list-element{
+.container .list-element{
     background-color: var(--LightGrey);
     padding: 15px;
-    border-radius: 100%;
-    opacity: 80%;
-    margin-top: 1rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-element:hover{
+    background-color: var(--Orange);
 }
 
 .container .submit-button{
@@ -77,6 +86,11 @@ body{
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+}
+
+.submit-button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
 .attribution {
