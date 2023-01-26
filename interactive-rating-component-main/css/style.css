@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --font: 'Overpass', sans-serif;
+}
+
+html, *, *::after, *::before{
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+}
+
+.container{
+    max-width: 375px;
+    background-color: var(--DarkBlue);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container .img img{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--MediumGrey);
+    opacity: 90%;
+}
+
+.container h2{
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.container p{
+    font-size: 15px;
+    color: var(--LightGrey);
+}
+
+.container ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.container ul .list-element{
+    background-color: var(--LightGrey);
+    padding: 15px;
+    border-radius: 100%;
+    opacity: 80%;
+    margin-top: 1rem;
+}
+
+.container .submit-button{
+    margin-top: 1.5rem;
+    background-color: var(--Orange);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
