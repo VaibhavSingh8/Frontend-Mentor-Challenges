@@ -97,21 +97,21 @@ body{
 
 /* Thankyou state section */
 
-.active-state{
-    
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 375px;
     background-color: var(--DarkBlue);
     border-radius: 25px;
     padding: 20px;
     margin-bottom: 20px;
-    display: none;
+    
 }
 
-.active-state.active{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hidden{
+    display: none;
 }
 
 .rating-comment{
@@ -123,17 +123,21 @@ body{
     background-color: var(--LightGrey);
 }
 
-.active-state h2{
+.thank-you h2{
     padding: 0;
     margin-top: 1.2rem;
 }
 
-.active-state p{
+.thank-you p{
     font-size: 15px;
     color: var(--LightGreyText);
     text-align: center;
     margin: 0;
     margin-bottom: 1rem;
+}
+
+.active{
+    background-color: var(--Orange) !important;
 }
 
 /* Footer Section */
