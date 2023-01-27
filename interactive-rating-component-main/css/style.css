@@ -114,8 +114,13 @@ body{
     display: none;
 }
 
+.svg-2{
+    height: 90%;
+}
+
 .rating-comment{
-    margin-top: 1.2rem;
+    object-fit: fill;
+    margin-top: 1rem;
     font-size: 13px;
     color: var(--Orange);
     padding: 10px;
