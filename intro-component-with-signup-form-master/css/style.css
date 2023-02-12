@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+html{
+    background-image:url(/images/bg-intro-desktop.png);
+    background-color:var(--Red);
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.container > section{
+    flex:1;
+}
+
+.first-section{
+    
+}
+
+.first-section h1{
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-container{
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
