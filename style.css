@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,400;1,600&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #002333;
+    --primary-color: #FFFFFF;
+    --grey-shade: #B4BEC9;
+    --dirty-white: #DEEFE7;
+    --link-color: #0be7ea;
+}
+
+body{
+    background-color: var(--bg-color);
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace, sans-serif; 
+}
+
+.navbar > h1{
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.navbar  > p{
+    color: var(--dirty-white);
+    margin-top: 2rem;
+}
+
+.navbar > p > a{
+    color: var(--link-color);
+    text-decoration: none;
+}
