@@ -31,7 +31,41 @@ body{
     margin-top: 2rem;
 }
 
-.navbar > p > a{
+.container{
+    margin: 0 auto;
+    min-height: 70vh;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+a{
     color: var(--link-color);
     text-decoration: none;
+    padding: 12px 36px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    font-size: 18px;
+    background-color: var(--bg-color)
 }
+
+a:hover{
+    background-color: var(--dirty-white);
+    color: var(--bg-color);
+}
+
+
